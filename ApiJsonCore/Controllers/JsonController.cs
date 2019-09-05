@@ -57,7 +57,7 @@
 
         public async Task<ActionResult> Query([FromBody] JObject jobject)
         {
-            JObject resultJobj = new SelectTable(_identitySvc, _tableMapper, db.Db).Query(jobject);
+           JObject resultJobj = new SelectTable(_identitySvc, _tableMapper, db.Db).Query(jobject);
             return Ok(resultJobj);
         }
 

@@ -99,7 +99,7 @@ namespace ApiJsonCore.Services
 
         Tuple<bool, string> IIdentityService.GetSelectRole(string table)
         {
-            throw new NotImplementedException();
+          return new Tuple<bool, string>(true,"*")  ;
         }
     }
 }
